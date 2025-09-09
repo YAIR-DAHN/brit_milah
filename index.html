@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ברית מילה - בשמחה ובהודיה</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👶%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+            <div class="event-details">
+                <h1 class="main-title"></h1>
+                <p class="subtitle">בשבח ובהודיה להשי"ת <br>הננו שמחים להודיעכם על הכנסת בננו שיחי'</p>
+                <p class="covenant-text">בבריתו של אברהם אבינו</p>
+                <p class="blessing">שתתקיים אי"ה</p>
+                
+                <div class="date-time-container">
+                    <div class="date-hebrew">יום שני כ"ב אלול</div>
+                    <div class="date-secular">(15.9.25)</div>
+                    <div class="time">בשעה 10:00</div>
+                </div>
+                
+                <div class="location-container">
+                    <div class="venue">באולמי אחיעזר</div>
+                    <div class="address">רחוב יהודה הנשיא 32 אלעד</div>
+                </div>
+                
+                <p class="invitation-closing">נשמח לראותכם</p>
+                <p class="family-name">משפחת עטר</p>
+            </div>
+        </header>
+        <div class="action-buttons">
+        <button id="registerBtn" class="register-btn">אשר הגעה</button>
+         </div>
+
+        <div class="countdown-container">
+            <h3 class="countdown-title">הברית מתחילה בעוד...</h3>
+            <div id="countdown">
+                <div class="time-block">
+                    <span class="days">00</span>
+                    <span class="label">ימים</span>
+                </div>
+                <div class="time-block">
+                    <span class="hours">00</span>
+                    <span class="label">שעות</span>
+                </div>
+                <div class="time-block">
+                    <span class="minutes">00</span>
+                    <span class="label">דקות</span>
+                </div>
+                <div class="time-block">
+                    <span class="seconds">00</span>
+                    <span class="label">שניות</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <!-- <button id="registerBtn" class="register-btn">אשר הגעה</button> -->
+            <div class="navigation-buttons">
+                <button id="wazeBtn" class="nav-btn waze-btn">
+                    <i class="fas fa-route"></i>
+                    ניווט בוויז
+                </button>
+                <button id="calendarBtn" class="nav-btn calendar-btn">
+                    <i class="fas fa-calendar-plus"></i>
+                    הוסף ליומן
+                </button>
+            </div>
+            <div class="invitation-image">
+                <img src="./img/hzmaba.jpg" alt="הזמנה לברית מילה" class="invitation-img">
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="credits" onclick="showContactModal()">
+                מערכת זו נבנתה ע״י y.d. systems
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>אישור הגעה לברית מילה</h3>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">שם מלא:</label>
+                    <input type="text" id="name" required placeholder="הכנס את שמך המלא">
+                </div>
+                <div class="form-group">
+                    <label for="wishes">איחולים והערות (רשות):</label>
+                    <textarea id="wishes" rows="3" placeholder="כתוב כאן איחולים או הערות מיוחדות..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">אשר הגעה</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- מודאל ליצירת קשר -->
+    <div id="contactModal" class="modal contact-modal">
+        <div class="modal-content contact-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h3>צור קשר</h3>
+            <div class="contact-options">
+                <a href="https://wa.me/972583730000" target="_blank" rel="noopener" class="contact-option whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                    <small>058-3730000</small>
+                </a>
+                <a href="tel:+972583730000" class="contact-option phone">
+                    <i class="fas fa-phone"></i>
+                    <span>טלפון</span>
+                    <small>058-3730000</small>
+                </a>
+                <a href="mailto:yairdahn@gmail.com" class="contact-option email">
+                    <i class="fas fa-envelope"></i>
+                    <span>אימייל</span>
+                    <small>yairdahn@gmail.com</small>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
