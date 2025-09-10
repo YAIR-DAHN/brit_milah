@@ -265,14 +265,14 @@ window.onclick = function(event) {
 // פונקציות ניווט
 function openWaze() {
     const address = 'רחוב יהודה הנשיא 32 אלעד';
-    const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent(address)}&navigate=yes`;
+    const wazeUrl = `https://ul.waze.com/ul?place=ChIJS5Cs5_gzHRURPUuSxB4xqdE&ll=32.05080910%2C34.95287700&navigate=yes&utm_medium=send_to_phone_QR`;
     window.open(wazeUrl, '_blank');
 }
 
 function addToCalendar() {
     const eventTitle = 'ברית מילה - משפחת עטר';
     const eventDetails = 'בשבח ובהודיה להשי"ת - הכנסת בננו שיחי\' בבריתו של אברהם אבינו';
-    const location = 'באולמי אחיעזר, רחוב יהודה הנשיא 32 אלעד';
+    const location = 'אולמי אחיעזר, רחוב יהודה הנשיא 32 אלעד';
     const startDate = '20250915T100000'; // 15.9.2025 10:00
     const endDate = '20250915T120000'; // משך 2 שעות
     
